@@ -1,10 +1,13 @@
-import useGeoLocation from './hooks/useGeoLocation';
-import { getWeatherData } from './service/weatherAPI';
+import TodayHighlight from './components/TodayHighlight';
 
 function App() {
-	const { getPosition, isLoading, error, position } = useGeoLocation();
-
-	return <>App</>;
+	return (
+		<div className="container mx-auto">
+			<main className="bg-red-50 p-4">
+				<TodayHighlight />
+			</main>
+		</div>
+	);
 }
 
 export default App;
